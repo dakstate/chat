@@ -1,0 +1,39 @@
+.work_zone {
+  display: flex;
+}
+
+.chatroom {
+  margin: 40px;
+  box-shadow: 0px 2px 20px 0px;
+  border-radius: 20px;
+  min-height: 600px;
+  padding-top: 30px;
+
+}
+
+.zone_notes {
+
+}
+
+.Notes {
+  margin: 40px;
+  padding-left: 11px;
+  height: 280px;
+  box-shadow: 0px 2px 20px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 280px;
+}
+
+.Calendar {
+  margin: 40px;
+  padding-left: 11px;
+  height: 280px;
+  box-shadow: 0px 2px 20px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}

@@ -1,28 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Chat x Channels Rapidly</title>
-    {% include 'css.html' %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>Chat</title>
 </head>
+
 <body>
-
-<div class='container'>
-    <div class='row border-bottom my-3 py-3'>
-        <div class='col'>
-            <h1 class='p-0 m-0'>Chat x Channels Rapidly</h1>
+  <div class="main">
+    <div class="bg-dark collapse show" id="navbarHeader" style="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">О чате</h4>
+            <p class="text-muted">Здесь должна находиться информация о чате и основное её применение.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Контакты</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Apteki.su</a></li>
+              <li><a href="#" class="text-white">Facebook</a></li>
+              <li><a href="#" class="text-white">Email</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-{% block content %}
-{% endblock %}
-</div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Chat</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="work_zone">
+      <div class="chatroom col-5">
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 
+          {% block content %}
+          {% endblock %}
 
-{% include 'js.html' %}
-{% block script %}
-{% endblock %}
-
+        </div>
+      </div>
+      <div class="col-6 zone_notes">
+        <div class="Notes">
+        <ul class="list-group scroll">
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-primary">Элемент основной группы списков</li>
+          <li class="list-group-item list-group-item-secondary">Дополнительный элемент группы списков</li>
+          <li class="list-group-item list-group-item-success">Элемент группы списка успешных действий</li>
+          <li class="list-group-item list-group-item-danger">Элемент группы списка опасности</li>
+          <li class="list-group-item list-group-item-warning">Элемент группы списка предупреждений</li>
+          <li class="list-group-item list-group-item-info">Элемент группы списка информации</li>
+          <li class="list-group-item list-group-item-light">Элемент группы с легким списком</li>
+          <li class="list-group-item list-group-item-dark">Элемент группы темных списков</li>
+        </ul>
+        </div>
+        <div class="Calendar">
+          <ul>
+            <il></il>
+            <il></il>
+            <il></il>
+            <il></il>
+            <il></il>
+            <il></il>
+            <il></il>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>

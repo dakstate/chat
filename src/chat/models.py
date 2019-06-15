@@ -28,7 +28,7 @@ class ThreadManager(models.Manager):
             user2 = Klass.objects.get(username=other_username)
             if user != user2:
                 obj = self.model(
-                        first=user, 
+                        first=user,
                         second=user2
                     )
                 obj.save()
@@ -41,7 +41,7 @@ class Thread(models.Model):
     second       = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='chat_thread_second')
     updated      = models.DateTimeField(auto_now=True)
     timestamp    = models.DateTimeField(auto_now_add=True)
-    
+
     objects      = ThreadManager()
 
     @property
